@@ -1,8 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://www.ykapps.ist/</loc></url>
-  <url><loc>https://www.ykapps.ist/support</loc></url>
-  <url><loc>https://www.ykapps.ist/privacy</loc></url>
-  <url><loc>https://www.ykapps.ist/terms</loc></url>
-  <url><loc>https://www.ykapps.ist/refunds</loc></url>
+<url><loc>https://www.ykapps.ist/</loc></url>
+<url><loc>https://www.ykapps.ist/apps.html</loc></url>
+<url><loc>https://www.ykapps.ist/fontly.html</loc></url>
+<url><loc>https://www.ykapps.ist/fontly-support.html</loc></url>
+<url><loc>https://www.ykapps.ist/fontly-privacy.html</loc></url>
+<url><loc>https://www.ykapps.ist/fontly-terms.html</loc></url>
+<url><loc>https://www.ykapps.ist/fontly-subscriptions.html</loc></url>
+<url><loc>https://www.ykapps.ist/fontly-data.html</loc></url>
+<url><loc>https://www.ykapps.ist/support.html</loc></url>
+<url><loc>https://www.ykapps.ist/privacy.html</loc></url>
+<url><loc>https://www.ykapps.ist/company.html</loc></url>
+<url><loc>https://www.ykapps.ist/legal.html</loc></url>
 </urlset>

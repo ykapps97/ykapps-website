@@ -1,0 +1,18 @@
+{
+  "primary": {
+    "mint": "#00FF9C",
+    "ink": "#12251D"
+  },
+  "supporting": {
+    "pale_green": "#B6FFA1",
+    "pale_yellow": "#FEFFA7",
+    "yellow": "#FFE700"
+  },
+  "accessible_neutrals": {
+    "paper": "#FCFFF8",
+    "muted": "#506156",
+    "link": "#007548",
+    "border": "#DDE8DF"
+  },
+  "usage": "Primary ink logo on pale or mint surfaces. Mint or reversed logo on ink. Yellow is an occasional accent, never body text on white."
+}

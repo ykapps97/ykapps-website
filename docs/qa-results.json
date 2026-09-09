@@ -1,0 +1,23 @@
+{
+  "render_method": "Isolated Chromium DOM rendering with local assets inlined for the test. Localhost and file navigation are restricted by this browser environment. Delivered HTML remains normal relative-file HTML.",
+  "missing_links": [],
+  "missing_fragments": [],
+  "console_errors": [],
+  "overflow": [],
+  "images": [],
+  "removed_copy": [],
+  "checks": {
+    "support_form_enabled": true,
+    "unconfigured_store_link_hidden": true,
+    "sample_letter_draws": true,
+    "sketch_png_export_generated": true,
+    "clear_canvas": true,
+    "freehand_drawing_works": true,
+    "undo_works": true,
+    "mobile_menu_opens": true,
+    "escape_closes_menu": true,
+    "no_external_asset_dependencies": true,
+    "fontly_icon_unchanged": true,
+    "no_font_files": true
+  }
+}

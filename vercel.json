@@ -3,49 +3,47 @@
   "buildCommand": null,
   "outputDirectory": null,
   "installCommand": null,
-  "cleanUrls": true,
+  "cleanUrls": false,
+  "trailingSlash": false,
+  "redirects": [
+    { "source": "/terms.html", "destination": "/fontly-terms.html", "permanent": true },
+    { "source": "/terms", "destination": "/fontly-terms.html", "permanent": true },
+    { "source": "/refund-policy.html", "destination": "/fontly-subscriptions.html", "permanent": true },
+    { "source": "/refund-policy", "destination": "/fontly-subscriptions.html", "permanent": true },
+    { "source": "/refunds.html", "destination": "/fontly-subscriptions.html", "permanent": true },
+    { "source": "/refunds", "destination": "/fontly-subscriptions.html", "permanent": true },
+    { "source": "/account-deletion.html", "destination": "/fontly-data.html", "permanent": true },
+    { "source": "/account-deletion", "destination": "/fontly-data.html", "permanent": true },
+    { "source": "/apps", "destination": "/apps.html", "permanent": true },
+    { "source": "/company", "destination": "/company.html", "permanent": true },
+    { "source": "/fontly", "destination": "/fontly.html", "permanent": true },
+    { "source": "/fontly-data", "destination": "/fontly-data.html", "permanent": true },
+    { "source": "/fontly-privacy", "destination": "/fontly-privacy.html", "permanent": true },
+    { "source": "/fontly-subscriptions", "destination": "/fontly-subscriptions.html", "permanent": true },
+    { "source": "/fontly-support", "destination": "/fontly-support.html", "permanent": true },
+    { "source": "/fontly-terms", "destination": "/fontly-terms.html", "permanent": true },
+    { "source": "/legal", "destination": "/legal.html", "permanent": true },
+    { "source": "/privacy", "destination": "/privacy.html", "permanent": true },
+    { "source": "/support", "destination": "/support.html", "permanent": true }
+  ],
   "headers": [
     {
       "source": "/(.*)",
       "headers": [
         {
           "key": "Content-Security-Policy",
-          "value": "default-src 'none'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'"
+          "value": "default-src 'self'; img-src 'self' data: blob:; style-src 'self' 'unsafe-inline'; script-src 'self' 'sha256-MKxyFqqXf0dNG+/oCN56cePKuFrHBkcECYkovJnT7Nk='; connect-src 'none'; font-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'; frame-ancestors 'self'"
         },
-        {
-          "key": "X-Content-Type-Options",
-          "value": "nosniff"
-        },
-        {
-          "key": "X-Frame-Options",
-          "value": "DENY"
-        },
-        {
-          "key": "Referrer-Policy",
-          "value": "strict-origin-when-cross-origin"
-        },
-        {
-          "key": "Permissions-Policy",
-          "value": "camera=(), microphone=(), geolocation=(), payment=()"
-        }
+        { "key": "X-Content-Type-Options", "value": "nosniff" },
+        { "key": "X-Frame-Options", "value": "SAMEORIGIN" },
+        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" },
+        { "key": "Permissions-Policy", "value": "camera=(), microphone=(), geolocation=()" }
       ]
     },
     {
-      "source": "/fonts/(.*)",
+      "source": "/assets/(.*)",
       "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=31536000, immutable"
-        }
-      ]
-    },
-    {
-      "source": "/logo.jpg",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=86400"
-        }
+        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
       ]
     }
   ]
